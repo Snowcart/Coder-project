@@ -63,7 +63,74 @@ while encoder==True:
             encode=str(encode)+('1110')
         if letter==('z'):
             encode=str(encode)+('2220')
+        if letter==('~'):
+            encoder=False
+            decoder=True
+            print ('switched to decoder')
     print (encode)
-if decoder==True:
-    print('Work in progress')
-    
+while decoder==True:
+    newword=str(input('Put in a input'))
+    for letter in newword:
+        encode=('')
+        if letter==(' '):
+            encode=str(encode)+(' ')
+        if letter==('70'):
+            print('works')
+            encode=str(encode)+('a')
+            print('works2')
+        if letter==('80'):
+            encode=str(encode)+('b')
+        if letter==('90'):
+            encode=str(encode)+('c')
+        if letter==('40'):
+            encode=str(encode)+('d')
+        if letter==('50'):
+            encode=str(encode)+('e')
+        if letter==('60'):
+            encode=str(encode)+('f')
+        if letter==('10'):
+            encode=str(encode)+('g')
+        if letter==('20'):
+            encode=str(encode)+('h')
+        if letter==('30'):
+            encode=str(encode)+('i')
+        if letter==('770'):
+            encode=str(encode)+('j')
+        if letter==('880'):
+            encode=str(encode)+('k')
+        if letter==('990'):
+            encode=str(encode)+('l')
+        if letter==('440'):
+            encode=str(encode)+('m')
+        if letter==('550'):
+            encode=str(encode)+('n')
+        if letter==('660'):
+            encode=str(encode)+('o')
+        if letter==('110'):
+            encode=str(encode)+('p')
+        if letter==('220'):
+            encode=str(encode)+('q')
+        if letter==('330'):
+            encode=str(encode)+('r')
+        if letter==('7770'):
+            encode=str(encode)+('s')
+        if letter==('8880'):
+            encode=str(encode)+('t')
+        if letter==('9990'):
+            encode=str(encode)+('u')
+        if letter==('4440'):
+            encode=str(encode)+('v')
+        if letter==('5550'):
+            encode=str(encode)+('w')
+        if letter==('6660'):
+            encode=str(encode)+('x')
+        if letter==('1110'):
+            encode=str(encode)+('y')
+        if letter==('2220'):
+            encode=str(encode)+('z')
+        if letter==('~'):
+            encoder=True
+            decoder=False
+            print ('Switched to encoder')
+    print (encode)
+
